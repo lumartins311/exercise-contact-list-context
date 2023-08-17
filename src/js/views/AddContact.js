@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext.js";
+
+//decretar 4 estados
+//crear funcion agregarcontacto y vincular a onSubmit
+//dentroo de la funcion pedir a api
 
 export const AddContact = () => {
+	const { store, action } = useContext(Context);
+	useEffect;
 	return (
 		<div className="container">
 			<div>
